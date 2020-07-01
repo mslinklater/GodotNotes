@@ -1,45 +1,160 @@
-# Class Hierarchy
+# C++ Class Hierarchy
 
-Object
-	ARVRPositionalTracker								- A tracked object
-	ARVRServer											- Server for AR and VR features
-	AudioServer											- Server interface for low level audio access
-	CameraServer										- Keeps track of external camera devices
-	ClassDB												- Class information repository
-	EditorFileSystemDirectory							- A directory for the resource filesystem
-	EditorNavigationMeshGenerator
-	EditorSelection										- Manages the SceneTree selection in the editor
-	EditorVCSInterface									- Version Control System interface which read and writes to the local VCS system in use
-	Engine												- Access to the engine properties
-	Geometry											- Helper node to calculate generic geometry operations
-	GodotSharp
-	IP													- Internet Protocol support functions
-	Input
-	InputMap
-	JNISingleton
-	JSON
-	JSONRPC
-	JavaClassWrapper
-	JavaScript											- Signleton that connects the engine with the browsers JavaScript context
-	MainLoop
-		SceneTree
-	Marshalls											- Data transformation and encoding helpers
-	Node
-	OS													- Operating System Functions
-	Performance											- Exposes performance related data
-	Physics2DDirectBodyState
-	Physics2DDirectSpaceState
-	Physics2DServer
-	PhysicsDirectBodyState
-	PhysicsDirectSpaceState
-	PhysicsServer
-	ProjectSettings										- Contains global variables accessible from everywhere
-	Reference											- Base class for reference counted objects
-	ResourceLoader
-	ResourceSaver
-	TranslationServer
-	TreeItem
-	UndoRedo
-	VisualScriptEditor
-	VisualServer
-	
+## Core Classes
+
+- AABB
+- Array
+- Basis
+- BSP_Tree
+- CharProxy
+- CharString
+- ClassDB
+- CommandQueueMT
+- Compression
+- CoreStringNames
+- CowData
+- CryptoCore
+- Delaunay2D
+- Dictionary
+- DirAccess
+	- DirAccessPack
+- DisjointSet
+- Engine
+- Face3
+- FileAccess
+	- FileAccessBuffered
+		- FileAccessBufferedFA
+	- FileAccessCompressed
+	- FileAccessEncrypted
+	- FileAccessMemory
+	- FileAccessNetwork
+	- FileAccessPack
+	- FileAccessZip
+- FileAccessNetworkClient
+- Geometry
+- GlobalConstants
+- HashMap
+- ImageFormatLoader
+- ImageLoader
+- JSON
+- List
+- Logger
+	- CompositeLogger
+	- RotatedFileLogger
+	- StdLogger
+- Main
+- Map
+- Math
+- MessageQueue
+- MethodBind
+	- MethodBindVarArg
+- NodePath
+- OAHashMap
+- Object
+	- InputMap
+	- IP (GDCLASS)
+	- ProjectSettings
+	- Reference (GDCLASS)
+    	- AStar (GDCLASS)
+    	- AStar2D (GDCLASS)
+		- ConfigFile
+		- Crypto
+		- DTLSServer
+		- EncodedObjectAsID
+		- Expression (GDCLASS)
+		- FuncRef
+		- HashingContext
+		- HTTPClient
+		- JSONParseResult
+		- MultiplayerAPI (GDCLASS)
+		- NetSocket
+		- PackedDataContainerRef
+		- PacketPeer
+			- NetworkedMultiplayerPeer (GDCLASS)
+			- PacketPeerDTLS (GDCLASS)
+			- PacketPeerStream (GDCLASS)
+			- PacketPeerUDP (GDCLASS)
+    	- PCKPacker
+		- Resource
+			- CryptoKey
+			- Image
+			- PackedDataContainer
+			- Script
+			- Translation
+				- PHashTranslation
+			- X509Certificate
+		- ResourceFormatLoader
+    		- ResourceFormatImporter
+    		- ResourceFormatLoaderBinary
+			- ResourceFormatLoaderCrypto
+			- ResourceFormatLoaderImage
+			- TranslationLoaderPO
+		- ResourceFormatSaver
+    		- ResourceFormatSaverBinary
+			- ResourceFormatSaverCrypto
+    	- ResourceImporter
+		- ResourceInteractiveLoader
+    		- ResourceInteraactiveLoaderBinary
+		- StreamPeer (GDCLASS)
+    		- StreamPeerBuffer (GDCLASS)
+    		- StreamPeerSSL (GDCLASS)
+    		- StreamPeerTCP (GDCLASS)
+  		- TCP_Server (GDCLASS)
+  		- UDPServer (GDCLASS)
+		- WeakRef
+		- XMLParser (GDLCASS)
+		- _Directory (GDCLASS)
+		- _File (GDCLASS)
+		- _Mutex (GDCLASS)
+		- _Semaphore (GDCLASS)
+		- _Thread (GDCLASS)
+	- TranslationServer
+	- UndoRedo
+	- _ClassDB (GDCLASS)
+	- _Geometry (GDCLASS)
+	- _JSON (GDCLASS)
+	- _Marshalls (GDCLASS)
+	- _OS (GDCLASS)
+	- _ResourceLoader (GDCLASS)
+	- _ResourceSaver (GDCLASS)
+- ObjectRC
+- Octree
+- OrderedHashMap
+- PackedData
+- PackSource
+	- PackSourcePck
+	- ZipArchive
+- PoolAllocator
+- PoolVector
+- Ref
+- RefPtr
+- ResourceCache
+- ResourceFormatSaverBinaryInstance
+- ResourceLoader
+- ResourceSaver
+- RID
+- RID_Data
+- RID_OwnerBase
+	- RID_Owner
+- RingBuffer
+- ScriptCodeCompletionCache
+- ScriptDebugger
+	- ScriptDebuggerLocal
+- ScriptInstance
+	- PlaceHolderScriptInstance
+- ScriptLanguage
+- ScriptServer
+- SelfList
+- Set
+- SortArray
+- String
+- StringBuffer
+- StringBuilder
+- StringName
+- Variant
+- VariantParser
+- VariantWriter
+- Vector
+- VectorWriteProxy
+- VMap
+- VSet
