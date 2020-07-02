@@ -14,13 +14,18 @@
 - CoreStringNames
 - CowData
 - CryptoCore
+- DefaultAllocator
 - Delaunay2D
 - Dictionary
 - DirAccess
 	- DirAccessPack
 - DisjointSet
 - Engine
+- EngineDebugger
+	- LocalDebugger
+	- RemoteDebugger
 - Face3
+- FakeMutex
 - FileAccess
 	- FileAccessBuffered
 		- FileAccessBufferedFA
@@ -45,14 +50,20 @@
 - Main
 - Map
 - Math
+- Memory
 - MessageQueue
 - MethodBind
 	- MethodBindVarArg
+- MIDIDriver
+- MutexImpl
+- MutexLock
 - NodePath
 - OAHashMap
 - Object
-	- InputMap
+	- Input (GDCLASS)
+	- InputMap (GDCLASS)
 	- IP (GDCLASS)
+	- MainLoop (GDCLASS)
 	- ProjectSettings
 	- Reference (GDCLASS)
     	- AStar (GDCLASS)
@@ -75,9 +86,28 @@
 			- PacketPeerStream (GDCLASS)
 			- PacketPeerUDP (GDCLASS)
     	- PCKPacker
+		- RandomNumberGenerator (GDCLASS)
+		- RemoteDebuggerPeer
+			- RemoteDebuggerPeerTCP
 		- Resource
 			- CryptoKey
 			- Image
+			- InputEvent (GDCLASS)
+				- InputEventAction (GDCLASS)
+				- InputEventFromWindow (GDCLASS)
+					- InputEventScreenDrag (GDCLASS)
+					- InputEventScreenTouch (GDCLASS)
+					- InputEventWithModifiers (GDCLASS)
+						- InputEventGesture (GDCLASS)
+							- InputEventMagnifyGesture (GDCLASS)
+							- InputEventPanGesture (GDCLASS)
+						- InputEventKey (GDCLASS)
+						- InputEventMouse (GDCLASS)
+							- InputEventMouseButton (GDCLASS)
+							- InputEventMouseMotion (GDCLASS)
+				- InputEventJoypadButton (GDCLASS)
+				- InputEventJoypadMotion (GDCLASS)
+				- InputEventMIDI (GDCLASS)
 			- PackedDataContainer
 			- Script
 			- Translation
@@ -100,6 +130,7 @@
     		- StreamPeerSSL (GDCLASS)
     		- StreamPeerTCP (GDCLASS)
   		- TCP_Server (GDCLASS)
+		- TriangleMesh (GDCLASS)
   		- UDPServer (GDCLASS)
 		- WeakRef
 		- XMLParser (GDLCASS)
@@ -120,12 +151,17 @@
 - ObjectRC
 - Octree
 - OrderedHashMap
+- OS
 - PackedData
 - PackSource
 	- PackSourcePck
 	- ZipArchive
+- Plane
 - PoolAllocator
 - PoolVector
+- Quat
+- QuickHull
+- RandomPCG
 - Ref
 - RefPtr
 - ResourceCache
@@ -137,6 +173,10 @@
 - RID_OwnerBase
 	- RID_Owner
 - RingBuffer
+- RWLock
+	- RWLockDummy
+- RWLockRead
+- RWLockWrite
 - ScriptCodeCompletionCache
 - ScriptDebugger
 	- ScriptDebuggerLocal
@@ -145,12 +185,17 @@
 - ScriptLanguage
 - ScriptServer
 - SelfList
+- Semaphore
 - Set
 - SortArray
 - String
 - StringBuffer
 - StringBuilder
 - StringName
+- Thread
+	- ThreadDummy
+- Transform
+- Triangulate
 - Variant
 - VariantParser
 - VariantWriter
