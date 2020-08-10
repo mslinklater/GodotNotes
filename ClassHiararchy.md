@@ -65,7 +65,7 @@
 	- IP (GDCLASS)
 	- MainLoop (GDCLASS)
 	- ProjectSettings
-	- Reference (GDCLASS)
+	- Reference (GDCLASS) - All reference counted classes
     	- AStar (GDCLASS)
     	- AStar2D (GDCLASS)
 		- ConfigFile
@@ -203,3 +203,41 @@
 - VectorWriteProxy
 - VMap
 - VSet
+
+## GLES2 Driver
+
+- Rasterizer
+	- RasterizerGLES2
+- RasterizerArrayGLES2
+- RasterizerArray_non_pod_GLES2
+- RasterizerCanvas
+	- RasterizerCanvasBaseGLES2
+		- RasterizerCanvasGLES2
+- RasterizerScene
+	- RasterizerSceneGLES2
+- RasterizerStorage
+	- RasterizerStorageGLES2
+- ShaderCompilerGLES2
+- ShaderGLES2
+
+## Platform X11
+
+
+
+## Visual Server
+
+-Object
+	- VisualServer (GDCLASS)
+		- VisualServerRaster
+		- VisualServerWrapMT
+
+- Rasterizer
+- RasterizerCanvas
+- RasterizerScene
+- RasterizerStorage
+- ShaderLanguage
+- ShaderTypes
+- VisualServerCanvas
+- VisualServerGlobals
+- VisualServerScene
+- VisualServerViewport
