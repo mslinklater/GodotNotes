@@ -133,7 +133,48 @@
             - TextureRect
             - Tree
             - VideoPlayer
-        - Node2D - HERE
+        - Node2D
+            - AnimatedSprite
+            - AudioStreamPlayer2D
+            - BackBufferCopy
+            - Bone2D
+            - CPUParticles2D
+            - Camera2D
+            - CanvasModulate
+            - CollisionObject2D
+                - Area2D
+                - PhysicsBody2D
+                    - KinematicBody2D
+                    - RigidBody2D
+                    - StaticBody2D
+            - CollisionPolygon2D
+            - CollisionShape2D
+            - Joint2D
+                - DampedSpringJoint2D
+                - GrooveJoint2D
+                - PinJoint2D
+            - Light2D
+            - LightOccluder2D
+            - Line2D
+            - Listener2D
+            - MeshInstance2D
+            - MultiMeshInstance2D
+            - Navigation2D
+            - NavigationPolygonInstance
+            - ParallaxLayer
+            - Particles2D
+            - Path2D
+            - PathFollow2D
+            - Polygon2D
+            - Position2D
+            - RayCast2D
+            - RemoteTransform2D
+            - Skeleton2D
+            - Sprite
+            - TileMap
+            - TouchScreenButton
+            - VisibilityNotifier2D
+            - YSort
     - AnimationPlayer
     - AnimationTree
     - AnimationTreePlayer
